@@ -65,6 +65,7 @@ const arrowFun = () => {
 arrowFun(); // window
 
 // Example 2
+// arrow inside an object
 const obj = {
   a: 4,
   y: () => {
@@ -75,6 +76,7 @@ const obj = {
 obj.y(); // window
 
 // Example 3
+// arrow function nested inside a function
 const obj2 = {
   a: 4,
   y: function () {
