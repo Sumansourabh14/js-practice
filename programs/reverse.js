@@ -60,4 +60,5 @@ function reverseNumber(num) {
 
   return reverseNumber;
 }
+
 console.log(reverseNumber(1456));
