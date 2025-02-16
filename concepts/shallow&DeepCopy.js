@@ -50,12 +50,12 @@ console.log(oldObj2, newObj2); // both are same
 
 // here, for both objects, the value of speed changed which is present inside the nested object
 // this is SHALLOW COPY
-// Using spread operator & Object.assign
+// Using spread operator or Object.assign
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // DEEP COPY
-// Use JSON methods.
+// Use JSON methods. (DO NOT use in interviews)
 const oldObj3 = {
   name: "Virtus",
   stats: {
