@@ -1,14 +1,22 @@
-function x() {
-  for (var i = 0; i < 5; i++) {
-    function closure(i) {
-      setTimeout(() => {
-        console.log(i);
-      }, i * 1000);
-    }
-    closure(i);
-  }
+// function sum(x) {
+//   return function b(y) {
+//     return function c(z) {
+//       return x + y + z;
+//     };
+//   };
+// }
 
-  console.log("run");
+// console.log(sum(1)(2)(3));
+
+// const sum1 = (a) => (b) => b ? sum1(a + b) : a;
+
+// console.log(sum1(1)(2)(3)(4)());
+
+let x = 5;
+
+function test(val = x) {
+  let x = 10;
+  console.log(val);
 }
 
-x();
+test();

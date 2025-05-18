@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <script src="/concepts/prototype.js" defer></script> -->
-    <script src="/concepts-2/hoisting.js"></script>
+
     <!-- <script src="/concepts/functions.js"></script> -->
     <!-- <script src="/concepts/promise.js" defer></script> -->
+    <style>
+      p {
+        font-size: 14px;
+      }
+
+      .text {
+        font-size: 18px !important;
+      }
+
+      #text-1 {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <button id="res">Resolve</button>
     <button id="rej">Reject</button>
     <button id="counter">Count ++</button>
 
+    <p class="text" id="text-1">Text</p>
+
+    <div id="div" style="padding: 10px; background-color: red">
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button>Button 4</button>
+    </div>
+
     <!-- this -->
     <button onclick="alert(this)">this on DOM</button>
     <!-- button element itself is the value of 'this' -->
+    <script src="/concepts-2/hoisting.js"></script>
+    <!-- <script src="/concepts/this.js"></script> -->
   </body>
 </html>
