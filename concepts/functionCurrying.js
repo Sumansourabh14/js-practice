@@ -26,3 +26,8 @@ function infiniteSum(a) {
 }
 
 console.log(infiniteSum(0)(2)(0)(4)(10)(14)());
+
+const infiniteSumArrow = (a) => (b) =>
+  b != undefined ? infiniteSumArrow(a + b) : a;
+
+console.log(infiniteSumArrow(0)(2)(0)(4)(10)(14)());
