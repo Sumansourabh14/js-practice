@@ -1,1 +1,1 @@
-import "./polyfills/map&Filter.js";
+import "./polyfills/reduce.js";
