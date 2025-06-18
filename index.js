@@ -1,1 +1,1 @@
-import "./concepts/functionCurrying.js";
+import "./polyfills/map&Filter.js";
