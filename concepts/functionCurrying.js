@@ -5,7 +5,7 @@ function outer(x) {
   };
 }
 
-outer(2)(6);
+// outer(2)(6);
 
 // 2. with bind method
 function addition(x, y) {
@@ -13,4 +13,16 @@ function addition(x, y) {
 }
 
 const additionBy4 = addition.bind(this, 2);
-additionBy4(10);
+// additionBy4(10);
+
+// infinite currying - sum function
+function infiniteSum(a) {
+  return function (b) {
+    if (b !== undefined) {
+      return infiniteSum(a + b);
+    }
+    return a;
+  };
+}
+
+console.log(infiniteSum(0)(2)(0)(4)(10)(14)());

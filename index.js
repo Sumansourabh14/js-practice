@@ -1,1 +1,1 @@
-import "./concepts/hoisting.js";
+import "./concepts/functionCurrying.js";
