@@ -2,11 +2,10 @@ const debouncing = (fn, delay) => {
   let timer;
 
   return function (...args) {
-    console.log({ args });
     clearTimeout(timer);
 
     timer = setTimeout(() => {
-      fn(...args);
+      fn.apply(this, args);
     }, delay);
   };
 };
@@ -15,7 +14,7 @@ const search = (term, ...args) => {
   console.log(term, args);
 };
 
-const searchWithDebounce = debouncing(search);
+const searchWithDebounce = debouncing(search, 500);
 
 searchWithDebounce("A");
 searchWithDebounce("App");
